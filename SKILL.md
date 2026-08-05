@@ -1,10 +1,10 @@
 ---
-name: backtest-assumption-audit
+name: backtest-assumption_check
 description: Use when an agent needs to independently audit the assumptions and biases behind a backtest / strategy code / research backtest report — execution timing and lookahead, trading costs, price limits and suspensions, survivorship bias, parameter freedom and multiple testing, data alignment and adjustment, turnover and capacity, benchmark and excess returns, and reporting transparency. Outputs a structured defect list (axis x evidence x severity x impact x fix).
 quantSkills:
   organization: https://github.com/quantskills
-  repository: wangofcong/skill-backtest-assumption-audit
-  repository_url: https://github.com/wangofcong/skill-backtest-assumption-audit
+  repository: wangofcong/skill-backtest-assumption_check
+  repository_url: https://github.com/wangofcong/skill-backtest-assumption_check
   project_type: skill
   collection: 研究验证与质量工具
   license: GPL-3.0

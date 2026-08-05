@@ -48,7 +48,7 @@
 
 ```json
 {
-  "schema": "backtest-assumption-audit/1",
+  "schema": "backtest-assumption_check/1",
   "generated_at": "2026-08-01",
   "axes": [
     {

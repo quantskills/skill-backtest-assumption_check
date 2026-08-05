@@ -94,7 +94,7 @@ def render_markdown(findings: list[Finding], ctx, generated_at: str) -> str:
 
 def render_json(findings: list[Finding], ctx, generated_at: str) -> dict:
     return {
-        "schema": "backtest-assumption-audit/1",
+        "schema": "backtest-assumption_check/1",
         "generated_at": generated_at,
         "audit_target": ctx.audit_target,
         "axes": [f.to_dict() for f in findings],

@@ -6,7 +6,7 @@ alwaysApply: false
 
 # Backtest Assumption Audit
 
-当用户要求审计回测代码 / 策略代码 / 研究回测报告时，按 QUANTSKILLS `skill-backtest-assumption-audit` 执行：
+当用户要求审计回测代码 / 策略代码 / 研究回测报告时，按 QUANTSKILLS `skill-backtest-assumption_check` 执行：
 
 1. 明确审计对象（回测代码 / 策略代码 / 研究报告 / 信号+面板）。
 2. 按九大维度逐条取证：成交时点与未来函数、交易成本、涨跌停与停牌、幸存者偏差、参数自由度与多重比较、数据对齐与复权、换手与容量、基准与超额、报告透明度。

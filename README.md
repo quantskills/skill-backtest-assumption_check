@@ -1,4 +1,4 @@
-# skill-backtest-assumption-audit
+# skill-backtest-assumption_check
 
 [简体中文](./README.md) | [English](./README.en.md)
 
@@ -8,7 +8,7 @@
 
 ---
 
-`skill-backtest-assumption-audit` 是 PandaAI Quant Skills（QUANTSKILLS 组织，07 研究验证与质量工具类）提供的**回测假设审计 Skill**。给定一段回测代码、策略代码或研究回测报告，它独立取证、逐条判定，产出可复现的缺陷清单——**不是回测引擎，是回测假设审计师**。
+`skill-backtest-assumption_check` 是 PandaAI Quant Skills（QUANTSKILLS 组织，07 研究验证与质量工具类）提供的**回测假设审计 Skill**。给定一段回测代码、策略代码或研究回测报告，它独立取证、逐条判定，产出可复现的缺陷清单——**不是回测引擎，是回测假设审计师**。
 
 它把「这个回测结果可信吗」拆成九大可核验的轴，并提供 `scripts/` 里的可运行探测器做数据级验证（lookahead 重放、涨跌停可达性、幸存者重建、换手容量、隐含成本等）。
 
@@ -57,7 +57,7 @@
 
 ```bash
 # 安装（Claude Code / OpenClaw / Codex 等支持 skills 目录的平台）
-cp -r skill-backtest-assumption-audit ~/.claude/skills/skill-backtest-assumption-audit
+cp -r skill-backtest-assumption_check ~/.claude/skills/skill-backtest-assumption_check
 
 # 运行数据级验证（可选，需 pandas + numpy）
 python -m pip install -r scripts/requirements.txt
@@ -84,7 +84,7 @@ python scripts/audit_cli.py --signal signal.csv --panel panel.csv --weights weig
 ## 📦 目录结构
 
 ```text
-skill-backtest-assumption-audit/
+skill-backtest-assumption_check/
 ├── SKILL.md                        # 核心协议（九维 + 7 步工作流 + 严重度分级）
 ├── references/                     # 方法论：audit-axes / evidence / severity / fixes / report / source_boundary
 ├── scripts/

@@ -1,4 +1,4 @@
-# skill-backtest-assumption-audit
+# skill-backtest-assumption_check
 
 [简体中文](./README.md) | [English](./README.en.md)
 
@@ -8,7 +8,7 @@
 
 ---
 
-`skill-backtest-assumption-audit` is a backtest assumption audit skill from PandaAI Quant Skills (the QUANTSKILLS org, category 07 — Research Validation & Quality). Given a piece of backtest code, strategy code, or a research backtest report, it gathers evidence independently and issues per-item verdicts — **not a backtest engine, but a backtest assumption auditor**.
+`skill-backtest-assumption_check` is a backtest assumption audit skill from PandaAI Quant Skills (the QUANTSKILLS org, category 07 — Research Validation & Quality). Given a piece of backtest code, strategy code, or a research backtest report, it gathers evidence independently and issues per-item verdicts — **not a backtest engine, but a backtest assumption auditor**.
 
 It breaks down "can I trust this backtest result?" into nine checkable axes and ships runnable detectors under `scripts/` for data-level verification (lookahead replay, price-limit reachability, survivorship reconstruction, turnover & capacity, implied costs).
 
@@ -57,7 +57,7 @@ Each axis yields a **PASS / WARN / FAIL / INFO** verdict plus a severity grade (
 
 ```bash
 # Install (platforms with a skills directory: Claude Code / OpenClaw / Codex)
-cp -r skill-backtest-assumption-audit ~/.claude/skills/skill-backtest-assumption-audit
+cp -r skill-backtest-assumption_check ~/.claude/skills/skill-backtest-assumption_check
 
 # Data-level verification (optional; needs pandas + numpy)
 python -m pip install -r scripts/requirements.txt
@@ -84,7 +84,7 @@ Missing inputs never lead to guessing: the affected axis degrades to **INFO (ins
 ## 📦 Layout
 
 ```text
-skill-backtest-assumption-audit/
+skill-backtest-assumption_check/
 ├── SKILL.md                        # Core protocol (9 axes + 7-step workflow + severity model)
 ├── references/                     # audit-axes / evidence / severity / fixes / report / source_boundary
 ├── scripts/
